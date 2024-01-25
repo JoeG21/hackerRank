@@ -129,5 +129,3 @@ for bool in bool_state:
 # operations = ['pop', 'remove 9', 'discard 9', 'discard 8', 'remove 7', 'pop', 'discard 6', 'remove 5', 'pop', 'discard 5']
 # print(set_operations(s, operations))
         
-
-
