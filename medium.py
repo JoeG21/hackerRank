@@ -3,12 +3,12 @@
 1: Leap Year
 *************
 '''
-def is_leap(year):
-    if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
-        return True
-    else:
-        return False
-print(is_leap(2023))
+# def is_leap(year):
+#     if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
+#         return True
+#     else:
+#         return False
+# print(is_leap(2023))
 
 
    
@@ -18,20 +18,20 @@ print(is_leap(2023))
 2: Merge the Tools!
 *******************
 '''
-def merge_the_tools(string, k):
-    seen = set()
-    current_substring = ''
+# def merge_the_tools(string, k):
+#     seen = set()
+#     current_substring = ''
 
-    for i, char in enumerate(string):
-        if char not in seen:
-            current_substring += char
-            seen.add(char)
+#     for i, char in enumerate(string):
+#         if char not in seen:
+#             current_substring += char
+#             seen.add(char)
         
-        if (i + 1) % k == 0:
-            print(current_substring)
-            seen.clear()
-            current_substring = ''
-merge_the_tools("AABCAAADA", 3)
+#         if (i + 1) % k == 0:
+#             print(current_substring)
+#             seen.clear()
+#             current_substring = ''
+# merge_the_tools("AABCAAADA", 3)
 '''
 Original Solution
 
@@ -77,6 +77,7 @@ def sortString(STDI):
 
     final_word = ''.join(sorted(low_char)) + ''.join(sorted(up_char)) + ''.join(sorted(odd_num)) + ''.join(sorted(even_num))
     return final_word
+word = 'ginortS'
 print(sortString(word)) # => ginortS1324
 
 
