@@ -62,22 +62,46 @@ def merge_the_tools(string, k):
 3: ginortS
 **********
 '''
-def sortString(STDI):
-    low_char = ''
-    up_char = ''
-    odd_num = ''
-    even_num = ''
+# def sortString(STDI):
+#     low_char = ''
+#     up_char = ''
+#     odd_num = ''
+#     even_num = ''
 
-    for char in STDI:
-        if char.islower(): low_char+=char
-        if char.isupper(): up_char+=char
-        if char.isdigit():
-            if int(char)%2!=0: odd_num+=char
-            else: even_num+=char
+#     for char in STDI:
+#         if char.islower(): low_char+=char
+#         if char.isupper(): up_char+=char
+#         if char.isdigit():
+#             if int(char)%2!=0: odd_num+=char
+#             else: even_num+=char
 
-    final_word = ''.join(sorted(low_char)) + ''.join(sorted(up_char)) + ''.join(sorted(odd_num)) + ''.join(sorted(even_num))
-    return final_word
-word = 'ginortS'
-print(sortString(word)) # => ginortS1324
+#     final_word = ''.join(sorted(low_char)) + ''.join(sorted(up_char)) + ''.join(sorted(odd_num)) + ''.join(sorted(even_num))
+#     return final_word
+# word = 'ginortS'
+# print(sortString(word)) # => ginortS1324
 
+
+
+
+'''
+**********
+4: Word Order
+**********
+'''
+# from collections import Counter
+
+# num = input()
+# words = [input() for char in range(int(num))]
+# word_counts = Counter(words)
+# print(len(word_counts))
+# print(" ".join(map(str, word_counts.values())))
+'''
+NOTE: Old solution
+
+word_dic = {}
+for word in words:
+    word_dic[word] = words.count(word)
+print(len(word_dic.keys()))
+print(" ".join(map(str, word_dic.values())))
+'''
 
